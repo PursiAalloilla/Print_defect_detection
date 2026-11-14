@@ -14,13 +14,17 @@ Some 3D-printer companies are trying to solve these problems with external senso
 
 Most modern printers already contain camera modules for print failure detection and so I set out to explore how well multi-modal decision making models could be used for:
 
-  **1. anomaly detection from calibration part (benchy, stringing/extrusion tower)**
+  **1. anomaly detection from calibration part (benchy, stringing/extrusion tower)** 
   
-   methodology:
-       Gemini Decisions 1 for
-        -Detection (noul)
-        -Severity approximation (score)
-  **2. adjustment step reasonning from the results**
+  **methodology:** 
+  Gemini Decisions 1 for:
+       
+  Detection (noul) 
+        
+  Severity approximation (score) 
+  
+  **2. adjustment step reasonning from the results** 
+ 
       "What should the new K value be for combating corner blobs caused by misaligned pressure advance value?"
 
 
