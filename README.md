@@ -8,13 +8,18 @@ Some of these print defects are:
 - corner blobs
 - layer lines
 
-Some 3D-printer companies are trying to solve these problems with external sensor such as load cells etc. but these often are custom built solutions for certain extruder/printer types. Most modern printers already contain camera modules for print failure detection and so I set out to explore how well multi-modal decision making models could be used for:
+Some 3D-printer companies are trying to solve these problems with external sensor such as load cells etc. but these often are custom built solutions for certain extruder/printer types. 
+
+# Solution
+
+Most modern printers already contain camera modules for print failure detection and so I set out to explore how well multi-modal decision making models could be used for:
 
   **1. anomaly detection from calibration part (benchy, stringing/extrusion tower)**
+  
    methodology:
-       - Gemini Decisions 1 for
+       Gemini Decisions 1 for
         -Detection (noul)
-          -Severity approximation (score)
+        -Severity approximation (score)
   **2. adjustment step reasonning from the results**
       "What should the new K value be for combating corner blobs caused by misaligned pressure advance value?"
 
