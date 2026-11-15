@@ -493,6 +493,47 @@ function renderHtml({ cards, ownUsb, isUncensored }) {
   }
   .pill-ok { border-color: rgba(34,197,94,0.45); color: #4ade80; background: rgba(34,197,94,0.09); }
   .pill-warn { border-color: rgba(255,107,43,0.5); color: #ff8a57; background: var(--accent-soft); }
+  .hero-top {
+    display: grid;
+    grid-template-columns: 1.25fr 0.85fr;
+    gap: 24px;
+    align-items: center;
+  }
+  @media (max-width: 920px) { .hero-top { grid-template-columns: 1fr; } }
+  .hero-hook {
+    background: var(--bg-muted);
+    border: 1px solid var(--border-hi);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  }
+  .hero-hook-img { position: relative; aspect-ratio: 16/10; background: #07090c; overflow: hidden; }
+  .hero-hook-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-hook-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(11, 13, 16, 0.86);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 107, 43, 0.5);
+    color: #ff9f76;
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 4px 9px;
+    border-radius: 999px;
+  }
+  .hero-hook-cap {
+    padding: 10px 14px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--muted);
+  }
+  .hero-hook-cap strong { color: var(--cyan); }
   h1 {
     font-size: clamp(26px, 3.6vw, 40px);
     line-height: 1.15;
@@ -500,7 +541,7 @@ function renderHtml({ cards, ownUsb, isUncensored }) {
     letter-spacing: -0.02em;
   }
   h1 span { color: var(--accent); }
-  .subtitle { color: var(--muted); font-size: 16px; max-width: 860px; margin: 0 0 24px; }
+  .subtitle { color: var(--muted); font-size: 16px; max-width: 860px; margin: 0; }
   .kpi-strip {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
@@ -733,16 +774,34 @@ function renderHtml({ cards, ownUsb, isUncensored }) {
 <body>
 <div class="wrap">
   <header class="hero">
-    <div class="top-badges">
-      <span class="pill">Junction Finland 2026</span>
-      <span class="pill">Context.dev Live-Web Ground Truth</span>
-      <span class="pill">Gemma 4 · Local Open Models</span>
-      ${editionBadge}
+    <div class="hero-top">
+      <div>
+        <div class="top-badges">
+          <span class="pill">Junction Finland 2026</span>
+          <span class="pill">Context.dev Live-Web Ground Truth</span>
+          <span class="pill">Gemma 4 · Local Open Models</span>
+          ${editionBadge}
+        </div>
+        <h1>Live Forum Wisdom Meets Local Open Vision: <span>Self-Calibrating 3D Printers</span></h1>
+        <p class="subtitle">
+          Closed 3D-printer vendors lock vision calibration behind proprietary clouds, leaving millions of open printers wasting plastic filament and <code>250W+</code> heater energy on failed trial-and-error prints. We built a <strong>Context.dev live-web pipeline</strong> that summarizes scattered forum discussions (<code>r/FixMyPrint</code>) into OP-confirmed ground truth for automated AI testing, and proved that lightweight open-weight <strong>Gemma 4 local models</strong> (<code>gemma-4-26b-a4b-it</code> at 4B active parameters &amp; <code>gemma-4-31b-it</code>) watching a cheap external USB webcam can drive <strong>Klipper / Moonraker</strong> calibration locally with zero cloud lock-in.
+        </p>
+      </div>
+      <div class="hero-hook">
+        <div class="hero-hook-img">
+          <img id="heroUsbImg" src="${ownUsb.golden_whisp_orig}" alt="External USB webcam capture of stringing retraction tower" />
+          <span class="hero-hook-tag">● USB Webcam Sim · Stringing 0.72</span>
+          <div class="img-toggle">
+            <button class="active" onclick="document.getElementById('heroUsbImg').src='${ownUsb.golden_whisp_orig}';this.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('active'));this.classList.add('active');">Raw USB</button>
+            <button onclick="document.getElementById('heroUsbImg').src='${ownUsb.golden_whisp_deg}';this.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('active'));this.classList.add('active');">640p + Noise</button>
+          </div>
+        </div>
+        <div class="hero-hook-cap">
+          <span><strong>gemma-4-26b-a4b-it</strong> → <code>SET_RETRACTION</code></span>
+          <span>96.6% F1</span>
+        </div>
+      </div>
     </div>
-    <h1>Live Forum Wisdom Meets Local Open Vision: <span>Self-Calibrating 3D Printers</span></h1>
-    <p class="subtitle">
-      Closed 3D-printer vendors lock vision calibration behind proprietary clouds, leaving millions of open printers wasting plastic filament and <code>250W+</code> heater energy on failed trial-and-error prints. We built a <strong>Context.dev live-web pipeline</strong> that summarizes scattered forum discussions (<code>r/FixMyPrint</code>) into OP-confirmed ground truth for automated AI testing, and proved that lightweight open-weight <strong>Gemma 4 local models</strong> (<code>gemma-4-26b-a4b-it</code> at 4B active parameters &amp; <code>gemma-4-31b-it</code>) watching a cheap external USB webcam can drive <strong>Klipper / Moonraker</strong> calibration locally with zero cloud lock-in.
-    </p>
 
     <div class="kpi-strip">
       <div class="kpi">

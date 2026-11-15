@@ -490,9 +490,49 @@ function renderBroHtml({ cards, ownUsb, isUncensored }) {
   }
   .pill-ok { border-color: rgba(34,197,94,0.45); color: #4ade80; background: rgba(34,197,94,0.09); }
   .pill-warn { border-color: rgba(255,107,43,0.5); color: #ff8a57; background: var(--accent-soft); }
+  .hero-top {
+    display: grid;
+    grid-template-columns: 1.25fr 0.85fr;
+    gap: 24px;
+    align-items: center;
+  }
+  @media (max-width: 900px) { .hero-top { grid-template-columns: 1fr; } }
+  .hero-hook {
+    background: var(--bg-muted);
+    border: 1px solid var(--border-hi);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  }
+  .hero-hook-img { position: relative; aspect-ratio: 16/10; background: #07090c; overflow: hidden; }
+  .hero-hook-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-hook-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(12, 15, 20, 0.88);
+    border: 1px solid rgba(255, 107, 43, 0.5);
+    color: #ff9f76;
+    font-family: var(--mono);
+    font-size: 11px;
+    padding: 4px 9px;
+    border-radius: 999px;
+  }
+  .hero-hook-cap {
+    padding: 10px 14px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--muted);
+  }
+  .hero-hook-cap strong { color: var(--cyan); }
   h1 { font-size: clamp(26px, 3.6vw, 38px); line-height: 1.18; margin: 0 0 14px; letter-spacing: -0.02em; }
   h1 span { color: var(--accent); }
-  .lead { font-size: 16.5px; color: #d5dde7; max-width: 860px; margin: 0 0 18px; }
+  .lead { font-size: 16.5px; color: #d5dde7; max-width: 860px; margin: 0; }
   .tldr-strip {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -630,17 +670,35 @@ function renderBroHtml({ cards, ownUsb, isUncensored }) {
 <body>
 <div class="wrap">
   <header class="hero">
-    <div class="top-badges">
-      <span class="pill">Junction Finland 2026</span>
-      <span class="pill">Context.dev Live Forum Ground Truth</span>
-      <span class="pill">Gemma 4 · Local Open Models</span>
-      <span class="pill">Plain-English Edition</span>
-      ${editionBadge}
+    <div class="hero-top">
+      <div>
+        <div class="top-badges">
+          <span class="pill">Junction Finland 2026</span>
+          <span class="pill">Context.dev Live Forum Ground Truth</span>
+          <span class="pill">Gemma 4 · Local Open Models</span>
+          <span class="pill">Plain-English Edition</span>
+          ${editionBadge}
+        </div>
+        <h1>Turning messy forum wisdom into <span>local, open AI calibration for any 3D printer</span></h1>
+        <p class="lead">
+          When a 3D print comes out hairy (stringing) or blobby at the corners, tuning it by hand wastes plastic filament and hours of <code>250W+</code> heater electricity printing test towers—unless you buy a closed-ecosystem printer that streams your workshop camera to a vendor cloud. We tested whether <strong>local open-weight Gemma 4 vision models</strong> + a cheap €10 external USB webcam + open-source Klipper/Moonraker can tune <em>any</em> old or new printer on your own hardware. To evaluate it without spending months breaking 500 prints in a lab, we built a <strong>Context.dev pipeline</strong> that mines real troubleshooting forums, summarizes threads where the owner confirmed the fix worked, and turns collective forum knowledge into automated ground truth—testing Google's cloud models (<code>gemini-3.8-flash</code>, <code>gemini-3.5-flash-lite</code>) against open Gemma 4 models (<code>gemma-4-31b-it</code> and 4B-active <code>gemma-4-26b-a4b-it</code>) across <strong>113 cases</strong>.
+        </p>
+      </div>
+      <div class="hero-hook">
+        <div class="hero-hook-img">
+          <img id="heroUsbImg" src="${ownUsb.golden_whisp_orig}" alt="Hairy yellow 3D print test shot on our external USB webcam" />
+          <span class="hero-hook-tag">● Our USB Webcam · Caught Stringing (0.72)</span>
+          <div class="img-toggle">
+            <button class="active" onclick="document.getElementById('heroUsbImg').src='${ownUsb.golden_whisp_orig}';this.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('active'));this.classList.add('active');">Sharp USB</button>
+            <button onclick="document.getElementById('heroUsbImg').src='${ownUsb.golden_whisp_deg}';this.parentElement.querySelectorAll('button').forEach(b=>b.classList.remove('active'));this.classList.add('active');">640p + Noise</button>
+          </div>
+        </div>
+        <div class="hero-hook-cap">
+          <span><strong>Local Gemma 4B</strong> → <code>SET_RETRACTION</code></span>
+          <span>96.6% F1</span>
+        </div>
+      </div>
     </div>
-    <h1>Turning messy forum wisdom into <span>local, open AI calibration for any 3D printer</span></h1>
-    <p class="lead">
-      When a 3D print comes out hairy (stringing) or blobby at the corners, tuning it by hand wastes plastic filament and hours of <code>250W+</code> heater electricity printing test towers—unless you buy a closed-ecosystem printer that streams your workshop camera to a vendor cloud. We tested whether <strong>local open-weight Gemma 4 vision models</strong> + a cheap €10 external USB webcam + open-source Klipper/Moonraker can tune <em>any</em> old or new printer on your own hardware. To evaluate it without spending months breaking 500 prints in a lab, we built a <strong>Context.dev pipeline</strong> that mines real troubleshooting forums, summarizes threads where the owner confirmed the fix worked, and turns collective forum knowledge into automated ground truth—testing Google's cloud models (<code>gemini-3.8-flash</code>, <code>gemini-3.5-flash-lite</code>) against open Gemma 4 models (<code>gemma-4-31b-it</code> and 4B-active <code>gemma-4-26b-a4b-it</code>) across <strong>113 cases</strong>.
-    </p>
 
     <div class="tldr-strip">
       <div class="stat">
