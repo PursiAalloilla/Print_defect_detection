@@ -26,11 +26,14 @@ build/
 .DS_Store
 
 # =============================================================================
-# 3. Showcase Sites — Block Uncensored Local Demo (Contains Scraped Photos)
-#    Public USB-only site (wSite/index.html or docs/index.html) stays allowed.
+# 3. Showcase Sites — Block Original Uncensored Demo; Allow /bro Uncensored Demo
+#    Public USB-only sites (index.html) and bro/local_uncensored.html are allowed.
 # =============================================================================
 wSite/local_uncensored.html
-*uncensored*.html
+wSite/original/local_uncensored.html
+docs/local_uncensored.html
+!wSite/bro/local_uncensored.html
+!docs/bro/local_uncensored.html
 
 # =============================================================================
 # 4. Datasets — Block All Scraped Web Images; Allow ONLY Own Printer USB Photos
