@@ -1,0 +1,50 @@
+{
+  "post": {
+    "id": "3small",
+    "title": "Unusual surface texture on benchy hull",
+    "body": "Printed at 200C PLA.",
+    "type": "image",
+    "url": "https://www.reddit.com/r/FixMyPrint/comments/3small/unusual_surface_texture/",
+    "link_url": "https://i.redd.it/thumb3small.jpg",
+    "domain": "i.redd.it",
+    "subreddit": "FixMyPrint",
+    "author": "new_printer_user",
+    "author_flair": null,
+    "flair": "Unsolved",
+    "posted_at": "2026-09-15T09:00:00.000Z",
+    "edited_at": null,
+    "score": 12,
+    "upvote_ratio": 0.85,
+    "comment_count": 6,
+    "crosspost_count": 0,
+    "award_count": 0,
+    "is_nsfw": false,
+    "is_spoiler": false,
+    "is_locked": false,
+    "is_stickied": false,
+    "is_archived": false,
+    "is_original_content": false,
+    "distinguished": null,
+    "removed_by": null,
+    "thumbnail_url": null,
+    "images": [
+      {
+        "url": "https://i.redd.it/thumb3small.jpg",
+        "width": 240,
+        "height": 180,
+        "caption": null
+      }
+    ],
+    "video": null,
+    "crosspost_parent_id": null
+  },
+  "comments": [
+    { "id": "m1", "author": "a1", "body": "Check belt tension.", "score": 4, "depth": 0, "parent_id": null, "is_submitter": false, "is_deleted": false, "replies": [] },
+    { "id": "m2", "author": "new_printer_user", "body": "Tried tightening belts, still not fixed unfortunately.", "score": 2, "depth": 1, "parent_id": "m1", "is_submitter": true, "is_deleted": false, "replies": [] },
+    { "id": "m3", "author": null, "body": "[deleted]", "score": 1, "depth": 0, "parent_id": null, "is_submitter": false, "is_deleted": true, "replies": [] },
+    { "id": "m4", "author": null, "body": "[removed]", "score": 0, "depth": 0, "parent_id": null, "is_submitter": false, "is_deleted": true, "replies": [] },
+    { "id": "m5", "author": "a2", "body": "Could be Z seam alignment.", "score": 3, "depth": 0, "parent_id": null, "is_submitter": false, "is_deleted": false, "replies": [] }
+  ],
+  "comment_sort": "top",
+  "has_more_comments": false
+}

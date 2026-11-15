@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://context.dev/schemas/failed-print-eval/synthesis.schema.json",
+  "title": "ThreadSynthesisOutput",
+  "description": "Synthesized reference diagnosis produced from a troubleshooting thread's community comments.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "defect_class",
+    "defect_class_free",
+    "printer_context",
+    "likely_causes",
+    "recommended_fixes",
+    "community_consensus",
+    "confidence",
+    "solved",
+    "evidence_comment_ids"
+  ],
+  "properties": {
+    "defect_class": {
+      "type": "string",
+      "enum": [
+        "stringing",
+        "oozing",
+        "warping",
+        "layer_shift",
+        "underextrusion",
+        "overextrusion",
+        "bed_adhesion",
+        "first_layer",
+        "spaghetti_detection",
+        "z_banding",
+        "ringing",
+        "blobs_zits",
+        "cracking",
+        "pillowing",
+        "ghosting",
+        "overhang_curling",
+        "mechanical_misalignment",
+        "other"
+      ]
+    },
+    "defect_class_free": {
+      "type": ["string", "null"]
+    },
+    "printer_context": {
+      "type": ["string", "null"]
+    },
+    "likely_causes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 5
+    },
+    "recommended_fixes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "maxItems": 5
+    },
+    "community_consensus": {
+      "type": "string",
+      "minLength": 10
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "solved": {
+      "type": "boolean"
+    },
+    "evidence_comment_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "shows_failed_print": {
+      "type": "boolean"
+    },
+    "image_roles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["image_index", "role"],
+        "properties": {
+          "image_index": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "failed_print",
+              "clean_print",
+              "ambiguous_or_partial",
+              "hardware_closeup",
+              "slicer_or_ui",
+              "other"
+            ]
+          }
+        }
+      }
+    },
+    "gallery_split": {
+      "type": "boolean"
+    },
+    "gallery_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "image_index",
+          "defect_class",
+          "likely_causes",
+          "recommended_fixes",
+          "include_in_eval"
+        ],
+        "properties": {
+          "image_index": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "defect_class": {
+            "type": "string",
+            "enum": [
+              "stringing",
+              "oozing",
+              "warping",
+              "layer_shift",
+              "underextrusion",
+              "overextrusion",
+              "bed_adhesion",
+              "first_layer",
+              "spaghetti_detection",
+              "z_banding",
+              "ringing",
+              "blobs_zits",
+              "cracking",
+              "pillowing",
+              "ghosting",
+              "overhang_curling",
+              "mechanical_misalignment",
+              "other"
+            ]
+          },
+          "defect_class_free": {
+            "type": ["string", "null"]
+          },
+          "likely_causes": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "maxItems": 5
+          },
+          "recommended_fixes": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "maxItems": 5
+          },
+          "include_in_eval": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  },
+  "if": {
+    "properties": {
+      "defect_class": { "const": "other" }
+    }
+  },
+  "then": {
+    "properties": {
+      "defect_class_free": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

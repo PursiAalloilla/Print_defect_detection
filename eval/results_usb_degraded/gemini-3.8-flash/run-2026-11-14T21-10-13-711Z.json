@@ -1,0 +1,308 @@
+{
+  "model": "gemini-3.8-flash",
+  "metrics": {
+    "accuracy": 0.5862068965517241,
+    "matrix": {
+      "stringing": {
+        "stringing": 12,
+        "clean": 0,
+        "other_defect": 3
+      },
+      "clean": {
+        "stringing": 0,
+        "clean": 3,
+        "other_defect": 0
+      },
+      "other_defect": {
+        "stringing": 1,
+        "clean": 8,
+        "other_defect": 2
+      }
+    },
+    "perClass": {
+      "stringing": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.9230769230769231,
+        "recall": 0.8,
+        "f1": 0.8571428571428571
+      },
+      "clean": {
+        "tp": 3,
+        "fp": 8,
+        "fn": 0,
+        "precision": 0.2727272727272727,
+        "recall": 1,
+        "f1": 0.42857142857142855
+      },
+      "other_defect": {
+        "tp": 2,
+        "fp": 3,
+        "fn": 9,
+        "precision": 0.4,
+        "recall": 0.18181818181818182,
+        "f1": 0.25000000000000006
+      }
+    },
+    "total": 29,
+    "correct": 17,
+    "errors": 0
+  },
+  "results": [
+    {
+      "path": "/workspace/dataset_usb_degraded/clean/Clean_butterfly.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.96,
+      "reasoning": "The printed multicolor butterfly model exhibits clean layer lines, crisp color transitions, and no observable stringing or defect artifacts."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/clean/clean_traffic_cone.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.96,
+      "reasoning": "The 3D print displays an array of smooth, well-defined orange cones with no noticeable stringing, layer shifting, or other structural defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/clean/Clean_zoro.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.98,
+      "reasoning": "The 3D printed bust shows crisp, high-resolution details with sharp edges on the hair tips and katana handles, featuring no visible stringing, under-extrusion, or print defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/bad_wall_quality_inside_bike.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.82,
+      "reasoning": "The printed part installed in the assembly exhibits intact structural geometry with no signs of stringing, layer shifting, or critical print failures. Any surface irregularities appear to be cosmetic, texture-related, or surface debris/grease from the operating environment."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/golden_support_piece.jpg",
+      "expected": "other_defect",
+      "predicted": "stringing",
+      "severity": 4,
+      "confidence": 0.96,
+      "reasoning": "The print exhibits severe stringing and oozing between the two vertical test towers, with numerous strands and filament webs densely bridging the open gap."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/gray_problem.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The 3D printed object and its adjacent tree support structure appear smooth and clean, with no visible stringing, layer shifts, or other defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/green_slant2.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The 3D-printed part exhibits smooth exterior walls, sharp details around the ventilation slots, and no visible stringing or defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/green_slant3.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The printed green part exhibits smooth, intact surfaces and well-defined contours without any visible stringing, layer shifting, or other notable defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect001.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The printed part exhibits smooth external surfaces, well-formed bridging, and intact support structures without signs of stringing, warping, or layer defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect002.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.8,
+      "confidence": 0.95,
+      "reasoning": "The 3D print displays severe under-extrusion, rough surface quality, and delamination/layer gaps across multiple layers, rather than stringing defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect003.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.6,
+      "confidence": 0.96,
+      "reasoning": "The cylinder exhibits severe surface artifacts, including underextrusion, roughness, and stutter adjacent to the vertical z-seam, caused by incorrect retraction, pressure advance, or extrusion issues."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect004.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The 3D-printed parts on the build plate display smooth surface layers, well-defined perimeters, and no evidence of stringing, warping, or layer defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/poor_adhesion.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The 3D-printed enclosure exhibits smooth walls, clean overhangs/cutouts, and crisp features with no discernible stringing, layer shifting, or other notable defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/terrible_corners.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.92,
+      "reasoning": "The 3D-printed black enclosure is fully formed with well-defined geometry, intact small features (clip/connector), and no visible stringing or critical printing defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/Always_first_strand.jpg",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 1,
+      "confidence": 0.99,
+      "reasoning": "The part exhibits catastrophic print failure with severe melting, thermal degradation, massive blobs, and complete loss of intended structural geometry, far exceeding simple stringing."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/golden_whispV3.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 4.5,
+      "confidence": 0.95,
+      "reasoning": "Dense filament stringing and oozing visibly span across the gap between the two vertical towers from the base to the top."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/little_moss_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.55,
+      "confidence": 0.95,
+      "reasoning": "Noticeable wispy filament strings and hairy whiskers are dangling from the perimeter walls and accumulating along the edge of the printed object."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/real_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.65,
+      "confidence": 0.88,
+      "reasoning": "The printed object exhibits noticeable under-extrusion and inconsistent layer deposition across the exterior walls, creating a porous, ribbed texture with visible gaps between layers."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing001.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.65,
+      "confidence": 0.96,
+      "reasoning": "Cobweb-like fine filament strands connect the vertical printed towers, characteristic of moderate stringing caused by insufficient retraction or high nozzle temperature.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing002.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.4,
+      "confidence": 0.93,
+      "reasoning": "Visible fine wisps, hairs, and cobweb-like filament strings are present along the left side of the geometric head and near the legs of the bacteriophage model.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing003.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.88,
+      "confidence": 0.98,
+      "reasoning": "Dense, severe webs of fine filament strings bridge across the gaps between the different upright features of the print.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing004.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.78,
+      "confidence": 0.99,
+      "reasoning": "The 3D print displays prominent stringing (cobweb-like filament strands) extending between the two test towers across nearly all vertical layers.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing005.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.88,
+      "confidence": 0.99,
+      "reasoning": "The 3D-printed retraction test part exhibits severe stringing, with numerous dense strands of oozed filament bridging the gap continuously between the two upright pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing006.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.48,
+      "confidence": 0.93,
+      "reasoning": "Fine stringing and cobweb-like filament strands are clearly visible hanging off the cabin roof edges, chimney, and around the openings of the 3D-printed Benchy.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing007.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.65,
+      "confidence": 0.95,
+      "reasoning": "The 3D printed temperature tower displays visible stringing and oozing across the open gaps between upright sections across multiple temperature tiers.",
+      "humanSeverity": 3,
+      "context": "handheld"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing008.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.6,
+      "confidence": 0.96,
+      "reasoning": "Distinct strands of plastic filament are visibly stretched horizontally across the open gap between the two printed towers, indicating a stringing defect caused by insufficient retraction or high nozzle temperature.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing009.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 2.5,
+      "confidence": 0.82,
+      "reasoning": "Small filament strings, wisps, and oozed branches are protruding along the left edge of the vertical candle body, caused by oozing and retraction issues during layer changes.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing010.jpg",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.65,
+      "confidence": 0.85,
+      "reasoning": "The 3D print displays severe layer inconsistency and prominent Z-banding/horizontal ridges across the entire hull and cabin. Minor stringing is also visible across the cabin doorway, but the dominant defect is the uneven layer stacking and extrusion variation.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing011.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.35,
+      "confidence": 0.92,
+      "reasoning": "Fine, wispy filament strings are visible across the surface facets and stretching across the inner recess of the black 3D printed object.",
+      "humanSeverity": 1,
+      "context": "close-up"
+    }
+  ]
+}

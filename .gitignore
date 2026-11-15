@@ -1,0 +1,91 @@
+# =============================================================================
+# 1. Secrets, API Keys & Environment Files
+# =============================================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+*secret*.json
+
+# =============================================================================
+# 2. Dependencies, Virtualenvs & Build/Test Caches
+# =============================================================================
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+*.log
+.DS_Store
+
+# =============================================================================
+# 3. Showcase Sites — Block Uncensored Local Demo (Contains Scraped Photos)
+#    Public USB-only site (wSite/index.html or docs/index.html) stays allowed.
+# =============================================================================
+wSite/local_uncensored.html
+*uncensored*.html
+
+# =============================================================================
+# 4. Datasets — Block All Scraped Web Images; Allow ONLY Own Printer USB Photos
+# =============================================================================
+# Scratch duplicate folder
+dataset/real_sub/
+
+# Curated dataset folders: ignore everything by default, whitelist own USB shots
+dataset/clean/*
+!dataset/clean/.gitkeep
+
+dataset/other_defect/*
+!dataset/other_defect/.gitkeep
+!dataset/other_defect/golden_support_piece.jpg
+!dataset/other_defect/gray_problem.jpg
+!dataset/other_defect/green_slant2.jpg
+!dataset/other_defect/green_slant3.jpg
+
+dataset/stringing/*
+!dataset/stringing/.gitkeep
+!dataset/stringing/golden_whispV3.jpg
+
+# USB-degraded synthetic dataset: ignore scraped derivatives, whitelist own USB shots
+dataset_usb_degraded/clean/*
+
+dataset_usb_degraded/other_defect/*
+!dataset_usb_degraded/other_defect/golden_support_piece.jpg
+!dataset_usb_degraded/other_defect/gray_problem.jpg
+!dataset_usb_degraded/other_defect/green_slant2.jpg
+!dataset_usb_degraded/other_defect/green_slant3.jpg
+
+dataset_usb_degraded/stringing/*
+!dataset_usb_degraded/stringing/golden_whispV3.jpg
+
+# =============================================================================
+# 5. Context.dev Reddit Scraper — Block All Scraped Threads, Images & JSONLs
+#    (Code, schemas, configs, tests, and docs remain allowed)
+# =============================================================================
+dataset/context_dev/.env
+dataset/context_dev/.env.*
+!dataset/context_dev/.env.example
+dataset/context_dev/.venv/
+dataset/context_dev/.pytest_cache/
+dataset/context_dev/*.egg-info/
+dataset/context_dev/data/candidates.jsonl
+dataset/context_dev/data/fetch_manifest.jsonl
+dataset/context_dev/data/filtered_threads.jsonl
+dataset/context_dev/data/discarded.jsonl
+dataset/context_dev/data/assets.jsonl
+dataset/context_dev/data/credit_usage.jsonl
+dataset/context_dev/data/pipeline_summary.json
+dataset/context_dev/data/raw_threads/*.json
+dataset/context_dev/data/images/*
+!dataset/context_dev/data/images/.gitkeep
+dataset/context_dev/data/records/*.json
+dataset/context_dev/data/dataset/*.jsonl
+dataset/context_dev/data/eval_runs/*
+!dataset/context_dev/data/eval_runs/.gitkeep

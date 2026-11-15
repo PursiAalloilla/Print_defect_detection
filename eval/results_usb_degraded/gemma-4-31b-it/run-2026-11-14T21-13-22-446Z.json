@@ -1,0 +1,308 @@
+{
+  "model": "gemma-4-31b-it",
+  "metrics": {
+    "accuracy": 0.6551724137931034,
+    "matrix": {
+      "stringing": {
+        "stringing": 12,
+        "clean": 0,
+        "other_defect": 3
+      },
+      "clean": {
+        "stringing": 0,
+        "clean": 3,
+        "other_defect": 0
+      },
+      "other_defect": {
+        "stringing": 2,
+        "clean": 5,
+        "other_defect": 4
+      }
+    },
+    "perClass": {
+      "stringing": {
+        "tp": 12,
+        "fp": 2,
+        "fn": 3,
+        "precision": 0.8571428571428571,
+        "recall": 0.8,
+        "f1": 0.8275862068965518
+      },
+      "clean": {
+        "tp": 3,
+        "fp": 5,
+        "fn": 0,
+        "precision": 0.375,
+        "recall": 1,
+        "f1": 0.5454545454545454
+      },
+      "other_defect": {
+        "tp": 4,
+        "fp": 3,
+        "fn": 7,
+        "precision": 0.5714285714285714,
+        "recall": 0.36363636363636365,
+        "f1": 0.4444444444444444
+      }
+    },
+    "total": 29,
+    "correct": 19,
+    "errors": 0
+  },
+  "results": [
+    {
+      "path": "/workspace/dataset_usb_degraded/clean/Clean_butterfly.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The print surfaces appear smooth and there are no visible strings or other defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/clean/clean_traffic_cone.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The printed cones have smooth surfaces and no visible stringing or other defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/clean/Clean_zoro.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The print exhibits high detail and smooth surfaces with no visible defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/bad_wall_quality_inside_bike.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.7,
+      "confidence": 0.9,
+      "reasoning": "The part exhibits significant surface roughness and blobbing/zits on the walls."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/golden_support_piece.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The part shows smooth surfaces and clean edges with no visible stringing or other defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/gray_problem.jpg",
+      "expected": "other_defect",
+      "predicted": "stringing",
+      "severity": 0.2,
+      "confidence": 0.9,
+      "reasoning": "Fine filament strands are visible bridging gaps in the printed part."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/green_slant2.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The part shows a consistent surface finish with no visible stringing or significant print defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/green_slant3.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.2,
+      "confidence": 0.9,
+      "reasoning": "Visible surface irregularities and small blobs or voids on the top face of the part."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect001.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The part surfaces appear smooth and free of visible artifacts like stringing or blobs."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect002.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.8,
+      "confidence": 1,
+      "reasoning": "The part exhibits severe surface roughness and blobbing/over-extrusion on the top section."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect003.jpg",
+      "expected": "other_defect",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 1,
+      "reasoning": "A dense vertical band of fine, hair-like filament strands is visible on the surface."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect004.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The printed parts appear to have smooth surfaces with no visible defects or stringing."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/poor_adhesion.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The part surfaces and edges appear smooth and free of visible defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/terrible_corners.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.5,
+      "confidence": 0.9,
+      "reasoning": "The top surface is rough and uneven with visible blobs and zits."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/Always_first_strand.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.95,
+      "confidence": 0.9,
+      "reasoning": "The part is covered in pervasive fine strands and hairy filament artifacts, indicating extreme stringing."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/golden_whispV3.jpg",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.6,
+      "confidence": 0.9,
+      "reasoning": "The vertical walls exhibit significant surface irregularities and ringing."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/little_moss_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 1,
+      "reasoning": "Visible fine strands of filament bridging the part and the build plate."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/real_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.9,
+      "confidence": 1,
+      "reasoning": "There is a severe print failure with a massive blob and collapse on the left side of the part."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing001.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.75,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are bridging the gaps between the printed towers.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing002.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.4,
+      "confidence": 0.9,
+      "reasoning": "Fine filament strands are visible bridging the gap on the left side of the printed block.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing003.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are bridging the gaps between the printed walls.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing004.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are bridging the gap between the two vertical pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing005.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are bridging the gap between the two vertical pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing006.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.9,
+      "reasoning": "Visible fine strands of filament are present on the upper cabin and chimney area.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing007.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 0.95,
+      "reasoning": "Numerous fine filament strands are visible bridging the gaps between the printed sections.",
+      "humanSeverity": 3,
+      "context": "handheld"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing008.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are bridging the gap between the two printed towers.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing009.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 1,
+      "reasoning": "Visible fine strands of filament bridging the vertical column.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing010.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.3,
+      "confidence": 0.8,
+      "reasoning": "Fine filament strands are visible around the cabin and bow of the boat.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing011.jpg",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.3,
+      "confidence": 0.8,
+      "reasoning": "Visible surface roughness and small blobs on the printed faces.",
+      "humanSeverity": 1,
+      "context": "close-up"
+    }
+  ]
+}

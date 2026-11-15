@@ -1,0 +1,33 @@
+# Secrets and environment
+.env
+.env.*
+!.env.example
+
+# Virtual environments & Python cache
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Scraped data, downloaded images, and generated artifacts (do not redistribute)
+data/candidates.jsonl
+data/fetch_manifest.jsonl
+data/filtered_threads.jsonl
+data/discarded.jsonl
+data/assets.jsonl
+data/credit_usage.jsonl
+data/pipeline_summary.json
+data/raw_threads/*.json
+data/images/*
+!data/images/.gitkeep
+data/records/*.json
+data/dataset/*.jsonl
+data/eval_runs/*
+!data/eval_runs/.gitkeep
+!data/raw_threads/.gitkeep
+!data/records/.gitkeep
+!data/dataset/.gitkeep

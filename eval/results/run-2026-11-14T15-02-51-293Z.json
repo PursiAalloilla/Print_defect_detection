@@ -1,0 +1,126 @@
+{
+  "model": "gemini-2.5-flash",
+  "metrics": {
+    "accuracy": 0,
+    "matrix": {
+      "stringing": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 0,
+        "ERROR": null
+      },
+      "clean": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 0
+      },
+      "other_defect": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 0
+      }
+    },
+    "perClass": {
+      "stringing": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "clean": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "other_defect": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    "total": 12,
+    "correct": 0
+  },
+  "results": [
+    {
+      "path": "/workspace/dataset/stringing/little_moss_stringing.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing001.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing002.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing003.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing004.png",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing005.jpg",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing006.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing007.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing008.jpg",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing009.jpg",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing010.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing011.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features a"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "model": "gemini-3.8-flash",
+  "metrics": {
+    "accuracy": 0.9166666666666666,
+    "matrix": {
+      "stringing": {
+        "stringing": 11,
+        "clean": 0,
+        "other_defect": 1
+      },
+      "clean": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 0
+      },
+      "other_defect": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 0
+      }
+    },
+    "perClass": {
+      "stringing": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 1,
+        "precision": 1,
+        "recall": 0.9166666666666666,
+        "f1": 0.9565217391304348
+      },
+      "clean": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "other_defect": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0,
+        "recall": null,
+        "f1": null
+      }
+    },
+    "total": 12,
+    "correct": 11
+  },
+  "results": [
+    {
+      "path": "/workspace/dataset/stringing/little_moss_stringing.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.75,
+      "confidence": 0.95,
+      "reasoning": "Dense whiskery hairs and fine stringing artifacts are heavily accumulated along the perimeter edges of the translucent print."
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing001.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.65,
+      "confidence": 0.99,
+      "reasoning": "Numerous fine, cobweb-like strands of filament stretch horizontally across the space between the printed towers.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing002.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.96,
+      "reasoning": "Noticeable fine stringing, cobweb-like filament hairs, and wisps are clinging to the edges of the geometric head and spanning between the legs.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing003.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.85,
+      "confidence": 0.99,
+      "reasoning": "There is a dense, prominent web of filament strings stretching continuously between all the upright structures.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing004.png",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 0.99,
+      "reasoning": "Dense horizontal wisps and strands of filament form a web bridging the gap between the two printed towers.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing005.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 0.99,
+      "reasoning": "Dense strands and fine hairs of filament heavily bridge the gap between the two printed pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing006.webp",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.75,
+      "confidence": 0.95,
+      "reasoning": "There are prominent drooping loops of unsupported filament sagging under the roof and overhangs, indicating severe overhang and cooling defects rather than stringing.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing007.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 0.98,
+      "reasoning": "Dense strands and webs of stringing are clearly visible spanning the open rectangular bridge cavities across nearly all levels of the temperature tower.",
+      "humanSeverity": 3,
+      "context": "handheld"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing008.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.65,
+      "confidence": 0.98,
+      "reasoning": "Distinct filament strings bridge the gap between the two printed towers alongside oozing artifacts on the surfaces.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing009.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.68,
+      "confidence": 0.95,
+      "reasoning": "Long filament strands stretch from the printed candle across the build plate alongside branch-like stringing on the side of the model.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing010.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.45,
+      "confidence": 0.95,
+      "reasoning": "Fine filament wisps and stringing are clearly visible bridging across the interior doorway of the cabin.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing011.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.4,
+      "confidence": 0.95,
+      "reasoning": "Fine wispy strands and cobweb-like filament stringing are clearly visible across the surfaces and overhangs of the black part.",
+      "humanSeverity": 1,
+      "context": "close-up"
+    }
+  ]
+}

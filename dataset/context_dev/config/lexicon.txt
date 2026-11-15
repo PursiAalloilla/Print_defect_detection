@@ -1,0 +1,32 @@
+# Case-insensitive regular expressions for 3D-print failure lexicon filtering (S3)
+# Mandatory for r/3Dprinting and r/3Dprintingtech; r/FixMyPrint passes on subreddit provenance.
+
+\bstringing\b
+\bwarping\b
+\bwarp(?:ed|s)?\b
+\blayer[- ]shift(?:ing|s|ed)?\b
+\bshifting\b
+\bunder[- ]?extru(?:sion|ding|ded)\b
+\bover[- ]?extru(?:sion|ding|ded)\b
+\badhesion\b
+\bnot\s+sticking\b
+\bfirst\s+layer\b
+\bspaghetti\b
+\bblobs?\b
+\bz[- ]?banding\b
+\bringing\b
+\bghosting\b
+\bclog(?:ged|ging|s)?\b
+\bnozzle\b
+\bbed\s+level(?:l?ing)?\b
+\bfailed\b
+\bruin(?:ed|ing|s)?\b
+\bwhat\s+went\s+wrong\b
+\bwhy\s+did\b
+\bhelp\b
+\bfix(?:ed|ing)?\b
+\btroubleshooting\b
+\bpillowing\b
+\boozing\b
+\bcracking\b
+\bdelaminat(?:ion|ing)\b

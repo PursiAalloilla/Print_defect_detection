@@ -1,0 +1,200 @@
+{
+  "model": "gemini-decision-1",
+  "metrics": {
+    "accuracy": 0,
+    "matrix": {
+      "stringing": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 0,
+        "ERROR": null
+      },
+      "clean": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 0,
+        "ERROR": null
+      },
+      "other_defect": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 0,
+        "ERROR": null
+      }
+    },
+    "perClass": {
+      "stringing": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "clean": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "other_defect": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    "total": 24,
+    "correct": 0
+  },
+  "results": [
+    {
+      "path": "/workspace/dataset/clean/Clean_butterfly.jpeg",
+      "expected": "clean",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/clean/clean_traffic_cone.jpg",
+      "expected": "clean",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/clean/Clean_zoro.webp",
+      "expected": "clean",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/bad_wall_quality_inside_bike.jpg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect001.jpeg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect002.jpeg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect003.webp",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect004.jpeg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/poor_adhesion.jpg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/terrible_corners.jpg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/Always_first_strand.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/little_moss_stringing.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/real_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing001.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing002.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing003.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing004.png",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing005.jpg",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing006.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing007.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing008.jpg",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing009.jpg",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing010.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing011.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "HTTP 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"models/gemini-decision-1 is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of a"
+    }
+  ]
+}

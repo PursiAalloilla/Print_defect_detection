@@ -1,0 +1,264 @@
+{
+  "model": "gemma-4-31b-it",
+  "metrics": {
+    "accuracy": 0.06896551724137931,
+    "matrix": {
+      "stringing": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 7,
+        "ERROR": null
+      },
+      "clean": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 2,
+        "ERROR": null
+      },
+      "other_defect": {
+        "stringing": 0,
+        "clean": 0,
+        "other_defect": 2,
+        "ERROR": null
+      }
+    },
+    "perClass": {
+      "stringing": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 7,
+        "precision": null,
+        "recall": 0,
+        "f1": null
+      },
+      "clean": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "precision": null,
+        "recall": 0,
+        "f1": null
+      },
+      "other_defect": {
+        "tp": 2,
+        "fp": 9,
+        "fn": 0,
+        "precision": 0.18181818181818182,
+        "recall": 1,
+        "f1": 0.3076923076923077
+      }
+    },
+    "total": 29,
+    "correct": 2
+  },
+  "results": [
+    {
+      "path": "/workspace/dataset/clean/Clean_butterfly.jpeg",
+      "expected": "clean",
+      "predicted": "other_defect",
+      "severity": 0.2,
+      "confidence": 0.9,
+      "reasoning": "Fine strands of filament are visible extending from the right side of the print onto the build plate."
+    },
+    {
+      "path": "/workspace/dataset/clean/clean_traffic_cone.jpg",
+      "expected": "clean",
+      "predicted": "other_defect",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The printed cones have smooth surfaces with no visible stringing or other defects."
+    },
+    {
+      "path": "/workspace/dataset/clean/Clean_zoro.webp",
+      "expected": "clean",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to act as a 3D-print quality inspection agent.\nI need to classify the provided image into one of three"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/bad_wall_quality_inside_bike.jpg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to inspect a 3D-printed part from an image.\n\n1.  **Analyze the image:**\n    *   The image shows a blac"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/golden_support_piece.jpg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to inspect a 3D-printed part and classify it as \"stringing\", \"other_defect\", or \"clean\".\n\n1.  **Analyz"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/golden_whispV3.jpg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to inspect a 3D-printed part from an image.\n\n1.  **Analyze the image:**\n    *   The image shows a smal"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/gray_problem.jpg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to inspect a 3D-printed part from an image.\n\n1.  **Analyze the image:**\n    *   The image shows a 3D-p"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/green_slant2.jpg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to inspect a 3D-printed part for quality.\n\n1.  **Analyze the image:**\n    *   The part is a light gree"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/green_slant3.jpg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to inspect a 3D-printed part for quality.\n\n1.  **Analyze the image:**\n    *   The image shows a small,"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect001.jpeg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to act as a 3D-print quality inspection agent.\nI need to analyze the provided image of a 3D-printed pa"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect002.jpeg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to inspect a 3D-printed part and classify it as \"stringing\", \"other_defect\", or \"clean\".\n\n1.  **Analyz"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect003.webp",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to act as a 3D-print quality inspection agent.\nI need to classify the provided image into one of three"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect004.jpeg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.4,
+      "confidence": 0.9,
+      "reasoning": "Visible zits and blobs on the top surface of the rectangular part."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/poor_adhesion.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.4,
+      "confidence": 0.9,
+      "reasoning": "Fine filament strands are visible bridging the small rectangular cutouts."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/terrible_corners.jpg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to act as a 3D-print quality inspection agent.\nI need to classify the provided image into one of three"
+    },
+    {
+      "path": "/workspace/dataset/stringing/Always_first_strand.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to classify a 3D-printed part based on an image.\n\n1.  **Analyze the image:**\n    *   The object is a r"
+    },
+    {
+      "path": "/workspace/dataset/stringing/little_moss_stringing.webp",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.8,
+      "confidence": 1,
+      "reasoning": "Numerous fine, hair-like strands of filament are visible bridging gaps and hanging from the edges of the part."
+    },
+    {
+      "path": "/workspace/dataset/stringing/real_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to act as a 3D-print quality inspection agent.\nI need to classify the provided image into one of three"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing001.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to act as a 3D-print quality inspection agent.\nI need to classify the provided image into one of three"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing002.webp",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Numerous fine, hair-like strands of filament are visible bridging the surfaces of the print.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing003.webp",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.9,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are bridging the gaps between the printed pillars.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing004.png",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.8,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are bridging the gap between the two vertical pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing005.jpg",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to act as a 3D-print quality inspection agent.\nI need to classify the provided image into one of three"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing006.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to act as a 3D-print quality inspection agent.\nI need to classify the provided image of a 3D-printed B"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing007.webp",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Fine filament strands are clearly visible bridging the gaps between the printed sections.",
+      "humanSeverity": 3,
+      "context": "handheld"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing008.jpg",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to act as a 3D-print quality inspection agent.\nI need to classify the provided image into one of three"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing009.jpg",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are visible bridging the tower and scattered across the print bed.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing010.webp",
+      "expected": "stringing",
+      "predicted": "ERROR",
+      "reasoning": "Unparseable response: The user wants me to act as a 3D-print quality inspection agent.\nI need to classify the provided image of a 3D-printed B"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing011.webp",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands and cobweb-like artifacts are visible across the surfaces and bridging gaps.",
+      "humanSeverity": 1,
+      "context": "close-up"
+    }
+  ]
+}

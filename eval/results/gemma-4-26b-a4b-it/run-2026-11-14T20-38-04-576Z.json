@@ -1,0 +1,306 @@
+{
+  "model": "gemma-4-26b-a4b-it",
+  "metrics": {
+    "accuracy": 0.7931034482758621,
+    "matrix": {
+      "stringing": {
+        "stringing": 14,
+        "clean": 0,
+        "other_defect": 0
+      },
+      "clean": {
+        "stringing": 1,
+        "clean": 2,
+        "other_defect": 0
+      },
+      "other_defect": {
+        "stringing": 0,
+        "clean": 4,
+        "other_defect": 7
+      }
+    },
+    "perClass": {
+      "stringing": {
+        "tp": 14,
+        "fp": 1,
+        "fn": 0,
+        "precision": 0.9333333333333333,
+        "recall": 1,
+        "f1": 0.9655172413793104
+      },
+      "clean": {
+        "tp": 2,
+        "fp": 4,
+        "fn": 1,
+        "precision": 0.3333333333333333,
+        "recall": 0.6666666666666666,
+        "f1": 0.4444444444444444
+      },
+      "other_defect": {
+        "tp": 7,
+        "fp": 0,
+        "fn": 4,
+        "precision": 1,
+        "recall": 0.6363636363636364,
+        "f1": 0.7777777777777778
+      }
+    },
+    "total": 29,
+    "correct": 23,
+    "errors": 1
+  },
+  "results": [
+    {
+      "path": "/workspace/dataset/clean/Clean_butterfly.jpeg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The printed butterfly and the test tower exhibit smooth surfaces and sharp details with no visible stringing or other defects."
+    },
+    {
+      "path": "/workspace/dataset/clean/clean_traffic_cone.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The printed cones appear smooth and free of any visible artifacts like stringing or blobs."
+    },
+    {
+      "path": "/workspace/dataset/clean/Clean_zoro.webp",
+      "expected": "clean",
+      "predicted": "stringing",
+      "severity": 0.2,
+      "confidence": 0.95,
+      "reasoning": "Fine filament strands are visible between the sword hilts and near the top of the left sword."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/bad_wall_quality_inside_bike.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.7,
+      "confidence": 0.95,
+      "reasoning": "The surface of the part exhibits significant texture irregularities and heavy blobbing."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/golden_support_piece.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0.1,
+      "confidence": 0.9,
+      "reasoning": "The part shows no obvious stringing, blobs, or layer shifts, appearing to be a successful print."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/golden_whispV3.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.4,
+      "confidence": 0.9,
+      "reasoning": "The top edge and surface of the print are uneven and poorly formed."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/gray_problem.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.9,
+      "confidence": 0.95,
+      "reasoning": "The part exhibits severe structural distortion and irregular, wavy layer formation."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/green_slant2.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The part shows smooth surfaces and clean edges with no visible stringing, blobs, or layer shifts."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/green_slant3.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The part shows smooth surfaces and consistent layer lines with no visible stringing or major defects."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect001.jpeg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.9,
+      "reasoning": "The printed surface appears smooth and free of visible stringing, blobs, or layer shifts."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect002.jpeg",
+      "expected": "other_defect",
+      "predicted": "ERROR",
+      "reasoning": "Empty response from model"
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect003.webp",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.75,
+      "confidence": 0.95,
+      "reasoning": "A prominent vertical line of irregular surface scarring/extrusion defects runs down the side of the part."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect004.jpeg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.3,
+      "confidence": 0.95,
+      "reasoning": "Visible small blobs or zits are present on the surface of the rectangular part."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/poor_adhesion.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.2,
+      "confidence": 0.9,
+      "reasoning": "The top rim of the part exhibits visible surface roughness and uneven texture."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/terrible_corners.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.4,
+      "confidence": 0.9,
+      "reasoning": "Visible large blob and surface irregularities on the right side of the part."
+    },
+    {
+      "path": "/workspace/dataset/stringing/Always_first_strand.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 1,
+      "confidence": 0.9,
+      "reasoning": "The part exhibits extreme, pervasive stringing and a highly whiskery, hairy texture throughout."
+    },
+    {
+      "path": "/workspace/dataset/stringing/little_moss_stringing.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Extensive fine filament strands are visible bridging gaps and hanging from the edges of the part."
+    },
+    {
+      "path": "/workspace/dataset/stringing/real_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.4,
+      "confidence": 0.95,
+      "reasoning": "Fine filament strands are visible bridging the top opening and gaps between the printed structures."
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing001.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are bridging the gaps between the printed pillars.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing002.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are visible bridging the gaps between different parts of the model.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing003.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 1,
+      "reasoning": "Extensive fine filament strands are bridging the gaps between the printed structures.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing004.png",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are bridging the gap between the two vertical pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing005.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 1,
+      "reasoning": "Extensive fine filament strands are bridging the gap between the two vertical pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing006.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Significant messy filament strands and clumps are visible around the cabin, smokestack, and hull edges.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing007.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.6,
+      "confidence": 1,
+      "reasoning": "Fine filament strands are visible bridging the gaps between the printed sections.",
+      "humanSeverity": 3,
+      "context": "handheld"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing008.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Visible fine filament strands are bridging the gap between the two printed pillars.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing009.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 1,
+      "reasoning": "Numerous fine filament strands are visible bridging the vertical structure of the print.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing010.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.4,
+      "confidence": 1,
+      "reasoning": "Fine filament strands are visible bridging the opening in the cabin.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing011.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.4,
+      "confidence": 1,
+      "reasoning": "Visible fine filament strands are bridging the gaps between different sections of the print.",
+      "humanSeverity": 1,
+      "context": "close-up"
+    }
+  ]
+}

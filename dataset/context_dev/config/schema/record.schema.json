@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://context.dev/schemas/failed-print-eval/record.schema.json",
+  "title": "FailedPrintEvalRecord",
+  "description": "Evaluation dataset record pairing failed 3D-print image(s) and minimal context with synthesized community reference diagnosis.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "source",
+    "context",
+    "images",
+    "reference",
+    "quality",
+    "splits"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["platform", "subreddit", "url", "retrieved_at"],
+      "properties": {
+        "platform": {
+          "type": "string",
+          "enum": ["reddit", "discourse", "flarum", "phpbb"]
+        },
+        "subreddit": {
+          "type": ["string", "null"]
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https?://"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "body_excerpt", "printer_context"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body_excerpt": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "printer_context": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "images": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256", "width", "height"],
+        "properties": {
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "width": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "defect_class",
+        "likely_causes",
+        "recommended_fixes",
+        "community_consensus",
+        "confidence",
+        "solved"
+      ],
+      "properties": {
+        "defect_class": {
+          "type": "string",
+          "enum": [
+            "stringing",
+            "oozing",
+            "warping",
+            "layer_shift",
+            "underextrusion",
+            "overextrusion",
+            "bed_adhesion",
+            "first_layer",
+            "spaghetti_detection",
+            "z_banding",
+            "ringing",
+            "blobs_zits",
+            "cracking",
+            "pillowing",
+            "ghosting",
+            "overhang_curling",
+            "mechanical_misalignment",
+            "other",
+            "clean"
+          ]
+        },
+        "defect_class_free": {
+          "type": ["string", "null"]
+        },
+        "likely_causes": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "maxItems": 5
+        },
+        "recommended_fixes": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "maxItems": 5
+        },
+        "community_consensus": {
+          "type": "string",
+          "minLength": 10
+        },
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low"]
+        },
+        "solved": {
+          "type": "boolean"
+        },
+        "evidence_comment_ids": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "gallery_split": {
+          "type": "boolean"
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min_comment_score", "comment_count", "upvote_ratio"],
+      "properties": {
+        "min_comment_score": {
+          "type": "integer"
+        },
+        "comment_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "upvote_ratio": {
+          "type": ["number", "null"],
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      }
+    },
+    "splits": {
+      "type": "string",
+      "enum": ["test", "val"]
+    }
+  }
+}

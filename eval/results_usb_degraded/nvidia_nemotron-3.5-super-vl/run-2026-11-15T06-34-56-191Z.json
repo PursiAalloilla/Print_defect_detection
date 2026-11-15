@@ -1,0 +1,308 @@
+{
+  "model": "nvidia/nemotron-3.5-super-vl",
+  "metrics": {
+    "accuracy": 0.6206896551724138,
+    "matrix": {
+      "stringing": {
+        "stringing": 12,
+        "clean": 3,
+        "other_defect": 0
+      },
+      "clean": {
+        "stringing": 0,
+        "clean": 3,
+        "other_defect": 0
+      },
+      "other_defect": {
+        "stringing": 1,
+        "clean": 7,
+        "other_defect": 3
+      }
+    },
+    "perClass": {
+      "stringing": {
+        "tp": 12,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.9230769230769231,
+        "recall": 0.8,
+        "f1": 0.8571428571428571
+      },
+      "clean": {
+        "tp": 3,
+        "fp": 10,
+        "fn": 0,
+        "precision": 0.23076923076923078,
+        "recall": 1,
+        "f1": 0.375
+      },
+      "other_defect": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 8,
+        "precision": 1,
+        "recall": 0.2727272727272727,
+        "f1": 0.42857142857142855
+      }
+    },
+    "total": 29,
+    "correct": 18,
+    "errors": 0
+  },
+  "results": [
+    {
+      "path": "/workspace/dataset_usb_degraded/clean/Clean_butterfly.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.8,
+      "reasoning": "The printed butterfly and cylinder appear free of stringing, blobs, or warping."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/clean/clean_traffic_cone.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.8,
+      "reasoning": "The printed cones appear well-formed with no visible strings, blobs, or layer shifts."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/clean/Clean_zoro.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The print exhibits sharp details on the hair and swords with no visible wisps, blobs, or layer shifts."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/bad_wall_quality_inside_bike.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.35,
+      "confidence": 0.6,
+      "reasoning": "The part displays a rough, pitted surface texture consistent with under-extrusion rather than fine stringing strands."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/golden_support_piece.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0.1,
+      "confidence": 0.75,
+      "reasoning": "The part shows normal layer lines with no visible wisps, hairs, blobs, warping, or layer shifts."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/gray_problem.jpg",
+      "expected": "other_defect",
+      "predicted": "stringing",
+      "severity": 0.35,
+      "confidence": 0.8,
+      "reasoning": "Thin filament wisps are visible extending from the top of the printed structure."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/green_slant2.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.85,
+      "reasoning": "The printed enclosure shows no visible strings, blobs, layer shifts, or warping; the surfaces and slots appear intact."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/green_slant3.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.8,
+      "reasoning": "The green block shows no visible stringing, blobs, or warping."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect001.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.7,
+      "reasoning": "The printed part shows smooth surfaces with no visible strands, blobs, or layer shifts."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect002.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.7,
+      "confidence": 0.8,
+      "reasoning": "The part shows a large, irregular blob of filament at the top rather than fine strings."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect003.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.5,
+      "confidence": 0.7,
+      "reasoning": "A rough vertical band along the seam indicates a surface defect rather than fine hair-like strings."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/other_defect004.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.75,
+      "reasoning": "The printed part shows no visible strings, blobs, layer shifts, or warping."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/poor_adhesion.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.85,
+      "reasoning": "The part displays smooth surfaces and defined slots with no visible wisps, blobs, or layer shifts."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/other_defect/terrible_corners.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.85,
+      "reasoning": "The part shows standard layer lines but no visible strings, blobs, warping, or other print defects."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/Always_first_strand.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 0.95,
+      "reasoning": "The part is covered in fine, hair-like strands of filament bridging across the structure."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/golden_whispV3.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.3,
+      "confidence": 0.6,
+      "reasoning": "The yellow part shows fine, hair-like strands along its vertical edges."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/little_moss_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.9,
+      "reasoning": "Visible wisps and stretched filament strands bridge the edges and corners of the print."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/real_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.35,
+      "confidence": 0.8,
+      "reasoning": "Fine filament wisps are visible clinging to the base and edges of the print."
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing001.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.95,
+      "reasoning": "Fine, hair-like strands of filament are visibly bridging the gaps between the vertical towers.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing002.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.35,
+      "confidence": 0.75,
+      "reasoning": "Fine filament wisps are visible along the left edge and surface of the print.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing003.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.6,
+      "confidence": 0.9,
+      "reasoning": "Visible thin filament strands bridge the gaps between the vertical walls of the print.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing004.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.95,
+      "reasoning": "Fine filament strands visibly bridge the gap between the two vertical pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing005.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 0.95,
+      "reasoning": "Fine filament strands densely bridge the gap between the two vertical pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing006.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.3,
+      "confidence": 0.75,
+      "reasoning": "Fine filament wisps are visible on the upper cabin and smokestack structures.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing007.jpg",
+      "expected": "stringing",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.85,
+      "reasoning": "The part shows normal layer lines with no visible strings, blobs, or warping.",
+      "humanSeverity": 3,
+      "context": "handheld"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing008.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.9,
+      "reasoning": "Fine filament strands are visibly bridging the gap between the two printed towers.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing009.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 0.9,
+      "reasoning": "Visible fine strands and whiskery artifacts cover the vertical surface of the print.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing010.jpg",
+      "expected": "stringing",
+      "predicted": "clean",
+      "severity": 0.1,
+      "confidence": 0.8,
+      "reasoning": "The printed boat shows normal layer lines with no visible stringing, blobs, warping, or other defects.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset_usb_degraded/stringing/stringing011.jpg",
+      "expected": "stringing",
+      "predicted": "clean",
+      "severity": 0.1,
+      "confidence": 0.75,
+      "reasoning": "No visible stringing, blobs, layer shifts, or warping; the part appears structurally intact with only minor cosmetic surface marks.",
+      "humanSeverity": 1,
+      "context": "close-up"
+    }
+  ]
+}

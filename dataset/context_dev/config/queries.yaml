@@ -1,0 +1,117 @@
+# Configuration for the 3D-Print Failure Diagnosis Eval Dataset Pipeline
+
+cost_control:
+  max_requests_per_run: 250
+  sdk_timeout_sec: 95.0
+  sdk_max_retries: 2
+
+subreddits:
+  - name: FixMyPrint
+    role: primary
+    enabled: true
+    flair_filter: null
+    require_lexicon: false
+  - name: 3Dprinting
+    role: secondary
+    enabled: true
+    flair_filter: Troubleshooting
+    require_lexicon: true
+  - name: 3Dprintingtech
+    role: tertiary
+    enabled: true
+    flair_filter: Troubleshooting
+    require_lexicon: true
+
+queries:
+  - stringing
+  - warping
+  - layer shift
+  - underextrusion
+  - bed adhesion
+  - first layer
+  - spaghetti
+  - failed print
+  - help
+  - what went wrong
+  - blobs
+  - ghosting
+  - z banding
+  - clogging
+  - pillowing
+
+discovery:
+  limit: 100
+  max_limit: 1000
+  paginate_if_has_more: false
+  passes:
+    - sort: top
+      time: all
+      enabled: true
+    - sort: new
+      time: year
+      enabled: false
+  filters:
+    allowed_post_types:
+      - image
+      - gallery
+    min_comment_count: 5
+    min_score: 10
+    drop_nsfw: true
+    drop_removed: true
+    excluded_flairs:
+      - Troubleshooting Tip
+      - Showcase
+      - Meme
+
+fetch:
+  comment_sort: top
+  comment_limit: 200
+  batch_threshold: 200
+  batch_poll_interval_sec: 15
+  batch_max_wait_sec: 1800
+
+filter:
+  min_image_width: 400
+  min_image_height: 300
+  min_non_deleted_comments: 5
+  enable_image_classification: false
+  solved_flair_keywords:
+    - solved
+    - print fixed
+  solved_submitter_phrases:
+    - that worked
+    - fixed
+    - solved
+    - thank you, that was it
+    - that fixed it
+    - this fixed it
+    - worked like a charm
+
+download:
+  timeout_ms: 30000
+  max_age_ms: 0
+  max_images_per_post: 4
+
+synthesis:
+  base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+  model: gemini-3.5-flash
+  temperature: 0.1
+  top_comments_limit: 40
+  max_reply_context_levels: 2
+  max_retries_on_schema_error: 1
+
+dataset:
+  val_split_ratio: 0.10
+  split_seed: 42
+  body_excerpt_max_chars: 1000
+
+evaluation:
+  base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+  model_under_test: gemini-3.5-flash-lite
+  judge_base_url: https://generativelanguage.googleapis.com/v1beta/openai/
+  judge_model: gemini-pro-latest
+  variants:
+    - A
+    - T
+    - B
+  random_seed: 42

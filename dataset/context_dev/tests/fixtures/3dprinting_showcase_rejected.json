@@ -1,0 +1,50 @@
+{
+  "post": {
+    "id": "2showc",
+    "title": "Finished painting my full-scale Mandalorian helmet after 40 hours of sanding!",
+    "body": "Printed in PLA+ on Bambu P1S with automotive filler primer and graphite rub.",
+    "type": "image",
+    "url": "https://www.reddit.com/r/3Dprinting/comments/2showc/finished_painting_helmet/",
+    "link_url": "https://i.redd.it/helmet2showc.jpg",
+    "domain": "i.redd.it",
+    "subreddit": "3Dprinting",
+    "author": "cosplay_maker",
+    "author_flair": null,
+    "flair": "Showcase",
+    "posted_at": "2026-09-14T10:00:00.000Z",
+    "edited_at": null,
+    "score": 450,
+    "upvote_ratio": 0.99,
+    "comment_count": 6,
+    "crosspost_count": 0,
+    "award_count": 1,
+    "is_nsfw": false,
+    "is_spoiler": false,
+    "is_locked": false,
+    "is_stickied": false,
+    "is_archived": false,
+    "is_original_content": true,
+    "distinguished": null,
+    "removed_by": null,
+    "thumbnail_url": null,
+    "images": [
+      {
+        "url": "https://i.redd.it/helmet2showc.jpg",
+        "width": 1600,
+        "height": 1200,
+        "caption": null
+      }
+    ],
+    "video": null,
+    "crosspost_parent_id": null
+  },
+  "comments": [
+    { "id": "s1", "author": "u1", "body": "Looks incredible!", "score": 30, "depth": 0, "parent_id": null, "is_submitter": false, "is_deleted": false, "replies": [] },
+    { "id": "s2", "author": "u2", "body": "Awesome metallic finish.", "score": 12, "depth": 0, "parent_id": null, "is_submitter": false, "is_deleted": false, "replies": [] },
+    { "id": "s3", "author": "u3", "body": "Which graphite powder did you use?", "score": 9, "depth": 0, "parent_id": null, "is_submitter": false, "is_deleted": false, "replies": [] },
+    { "id": "s4", "author": "cosplay_maker", "body": "Generals pure graphite powder over gloss black!", "score": 14, "depth": 1, "parent_id": "s3", "is_submitter": true, "is_deleted": false, "replies": [] },
+    { "id": "s5", "author": "u4", "body": "This is the way.", "score": 25, "depth": 0, "parent_id": null, "is_submitter": false, "is_deleted": false, "replies": [] }
+  ],
+  "comment_sort": "top",
+  "has_more_comments": false
+}

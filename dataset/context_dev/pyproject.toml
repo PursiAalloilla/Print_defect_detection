@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "failed-print-eval"
+version = "0.1.0"
+description = "3D-Print Failure Diagnosis Evaluation Dataset Pipeline using Context.dev and OpenAI-compatible LLMs"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "context.dev>=2.50.0",
+    "jsonschema>=4.20.0",
+    "openai>=1.40.0",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+fpe-discover = "src.discover:main"
+fpe-fetch = "src.fetch:main"
+fpe-filter = "src.filter:main"
+fpe-download = "src.download:main"
+fpe-synthesize = "src.synthesize:main"
+fpe-build-dataset = "src.build_dataset:main"
+fpe-evaluate = "src.evaluate:main"
+fpe-pipeline = "src.pipeline:main"
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

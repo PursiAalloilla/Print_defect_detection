@@ -1,0 +1,308 @@
+{
+  "model": "nvidia/nemotron-3.5-super-vl",
+  "metrics": {
+    "accuracy": 0.6551724137931034,
+    "matrix": {
+      "stringing": {
+        "stringing": 14,
+        "clean": 0,
+        "other_defect": 1
+      },
+      "clean": {
+        "stringing": 1,
+        "clean": 2,
+        "other_defect": 0
+      },
+      "other_defect": {
+        "stringing": 2,
+        "clean": 6,
+        "other_defect": 3
+      }
+    },
+    "perClass": {
+      "stringing": {
+        "tp": 14,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.8235294117647058,
+        "recall": 0.9333333333333333,
+        "f1": 0.8749999999999999
+      },
+      "clean": {
+        "tp": 2,
+        "fp": 6,
+        "fn": 1,
+        "precision": 0.25,
+        "recall": 0.6666666666666666,
+        "f1": 0.36363636363636365
+      },
+      "other_defect": {
+        "tp": 3,
+        "fp": 1,
+        "fn": 8,
+        "precision": 0.75,
+        "recall": 0.2727272727272727,
+        "f1": 0.39999999999999997
+      }
+    },
+    "total": 29,
+    "correct": 19,
+    "errors": 0
+  },
+  "results": [
+    {
+      "path": "/workspace/dataset/clean/Clean_butterfly.jpeg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The printed butterfly and calibration tower show sharp details and smooth surfaces with no visible strands, blobs, or warping."
+    },
+    {
+      "path": "/workspace/dataset/clean/clean_traffic_cone.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.85,
+      "reasoning": "The printed orange cones appear well-formed with no visible strings, blobs, or layer shifts."
+    },
+    {
+      "path": "/workspace/dataset/clean/Clean_zoro.webp",
+      "expected": "clean",
+      "predicted": "stringing",
+      "severity": 0.15,
+      "confidence": 0.8,
+      "reasoning": "Fine filament wisps are visible on the sword hilts and hair spikes."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/bad_wall_quality_inside_bike.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.3,
+      "confidence": 0.75,
+      "reasoning": "The part exhibits a rough surface texture with visible blobs and zits on the vertical walls."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/golden_support_piece.jpg",
+      "expected": "other_defect",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.9,
+      "reasoning": "Fine strands of stretched filament are visible bridging the vertical surfaces and gaps of the print."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/gray_problem.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.85,
+      "reasoning": "The part exhibits smooth surfaces with no visible wisps, blobs, or layer shifts."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/green_slant2.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The part exhibits smooth surfaces and clean features with no visible stringing, blobs, or warping."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/green_slant3.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.2,
+      "confidence": 0.8,
+      "reasoning": "A white blob or zits is visible on the top surface near the right hole."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect001.jpeg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.8,
+      "reasoning": "The visible white print surfaces show no obvious strands, blobs, or warping."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect002.jpeg",
+      "expected": "other_defect",
+      "predicted": "stringing",
+      "severity": 0.6,
+      "confidence": 0.85,
+      "reasoning": "The print surface exhibits fine, hair-like strands and a whiskery texture characteristic of filament stringing."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect003.webp",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.5,
+      "confidence": 0.85,
+      "reasoning": "A vertical seam shows rough, irregular layer artifacts and scarring along the cylinder's center."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect004.jpeg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The printed parts show sharp edges and smooth surfaces with no visible wisps, blobs, or warping."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/poor_adhesion.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0.05,
+      "confidence": 0.9,
+      "reasoning": "The part shows consistent layer lines with no visible stringing, blobs, or warping."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/terrible_corners.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.85,
+      "reasoning": "The part shows consistent layer lines and no visible hairs, blobs, or warping."
+    },
+    {
+      "path": "/workspace/dataset/stringing/Always_first_strand.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.85,
+      "confidence": 0.9,
+      "reasoning": "The print surface is covered in fine, stretched filament strands bridging gaps and hanging loosely."
+    },
+    {
+      "path": "/workspace/dataset/stringing/golden_whispV3.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.85,
+      "reasoning": "The yellow part exhibits fine, hair-like strands across its surface, indicative of filament oozing during travel moves."
+    },
+    {
+      "path": "/workspace/dataset/stringing/little_moss_stringing.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.6,
+      "confidence": 0.95,
+      "reasoning": "Visible fine strands and wisps of filament clinging to the corners and edges of the print."
+    },
+    {
+      "path": "/workspace/dataset/stringing/real_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.35,
+      "confidence": 0.85,
+      "reasoning": "Fine filament wisps are visible spanning the interior cavity and on the build plate."
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing001.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.6,
+      "confidence": 0.95,
+      "reasoning": "Fine white strands bridge the gaps between the vertical towers, indicating filament oozing during travel moves.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing002.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.4,
+      "confidence": 0.85,
+      "reasoning": "Visible fine strands and whiskers along the left edge and between legs indicate stringing.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing003.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.75,
+      "confidence": 0.95,
+      "reasoning": "Dense fine filament strands bridge the gaps between vertical walls.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing004.png",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 0.95,
+      "reasoning": "Visible fine filament strands bridge the gap between the two vertical pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing005.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.6,
+      "confidence": 0.95,
+      "reasoning": "Numerous fine filament strands bridge the gap between the two pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing006.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.85,
+      "reasoning": "Fine filament wisps and strands are visible around the cabin roof and edges.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing007.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.4,
+      "confidence": 0.8,
+      "reasoning": "Fine wispy strands and hairs are visible on the surfaces and in the gaps of the print.",
+      "humanSeverity": 3,
+      "context": "handheld"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing008.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.95,
+      "reasoning": "Fine filament strands bridge the gap between the two printed towers.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing009.jpg",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.65,
+      "confidence": 0.85,
+      "reasoning": "The vertical wall exhibits significant blobbing and rough texture along its length.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing010.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.2,
+      "confidence": 0.75,
+      "reasoning": "Fine filament wisps are visible bridging the cabin archway and around the top edges.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing011.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.4,
+      "confidence": 0.9,
+      "reasoning": "Visible fine white strands and hairs across the black surfaces indicate stringing.",
+      "humanSeverity": 1,
+      "context": "close-up"
+    }
+  ]
+}

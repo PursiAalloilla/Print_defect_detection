@@ -1,0 +1,102 @@
+{
+  "_scale": {
+    "severity": {
+      "1": "very little - just a few specs of stringing",
+      "2": "slight - light wisps, clearly visible but minor",
+      "3": "bad - obvious/heavy stringing"
+    },
+    "context": ["printbed", "handheld", "close-up"]
+  },
+  "stringing/stringing001.webp": {
+    "severity": 2,
+    "severity_label": "slight",
+    "context": "close-up",
+    "original_name": "slight_stringing.webp"
+  },
+  "stringing/stringing002.webp": {
+    "severity": 2,
+    "severity_label": "slight",
+    "context": "close-up",
+    "original_name": "slight_stringing_bacteriophage.webp",
+    "note": "bacteriophage model print"
+  },
+  "stringing/stringing003.webp": {
+    "severity": 2,
+    "severity_label": "slight",
+    "context": "close-up",
+    "original_name": "slight_stringing_silk.webp",
+    "note": "silk filament"
+  },
+  "stringing/stringing004.png": {
+    "severity": 3,
+    "severity_label": "bad",
+    "context": "close-up",
+    "original_name": "stringing002.png",
+    "note": "severity assumed 'bad' from original naming convention - verify"
+  },
+  "stringing/stringing005.jpg": {
+    "severity": 3,
+    "severity_label": "bad",
+    "context": "close-up",
+    "original_name": "stringing003.jpg",
+    "note": "severity assumed 'bad' from original naming convention - verify"
+  },
+  "stringing/stringing006.webp": {
+    "severity": 3,
+    "severity_label": "bad",
+    "context": "close-up",
+    "original_name": "stringing_blue_pla_bency.webp",
+    "note": "blue PLA benchy"
+  },
+  "stringing/stringing007.webp": {
+    "severity": 3,
+    "severity_label": "bad",
+    "context": "handheld",
+    "original_name": "stringing_hand.webp"
+  },
+  "stringing/stringing008.jpg": {
+    "severity": 3,
+    "severity_label": "bad",
+    "context": "printbed",
+    "original_name": "stringing_printbed_video.jpg",
+    "note": "video frame - check for UI overlays/text"
+  },
+  "stringing/stringing009.jpg": {
+    "severity": 3,
+    "severity_label": "bad",
+    "context": "printbed",
+    "original_name": "stringing_printbed_viedo.jpg",
+    "note": "video frame - check for UI overlays/text"
+  },
+  "stringing/stringing010.webp": {
+    "severity": 3,
+    "severity_label": "bad",
+    "context": "close-up",
+    "original_name": "stringing_with_layershift.webp",
+    "note": "co-occurring defect: layer shift - model may defensibly pick either"
+  },
+  "stringing/stringing011.webp": {
+    "severity": 1,
+    "severity_label": "very little",
+    "context": "close-up",
+    "original_name": "very_little_stringing.webp"
+  },
+  "other_defects/other_defect001.jpeg": {
+    "defect": "layer problems",
+    "original_name": "layer_problems.jpeg"
+  },
+  "other_defects/other_defect002.jpeg": {
+    "defect": "unspecified",
+    "original_name": "other_defect_benchy_cardboard.jpeg",
+    "note": "benchy photographed on cardboard - verify what the defect actually is"
+  },
+  "other_defects/other_defect003.webp": {
+    "defect": "seam problem",
+    "original_name": "seam_problem.webp"
+  },
+  "other_defects/other_defect004.jpeg": {
+    "defect": "whisping",
+    "original_name": "whisping.jpeg",
+    "note": "WARNING: 'whisping'/'wisping' is often used for fine string-like strands. If this image shows wispy filament strands, it may actually belong in stringing/ as an edge case - double-check this label"
+  }
+}

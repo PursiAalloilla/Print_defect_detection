@@ -1,0 +1,267 @@
+{
+  "model": "gemini-3.8-flash",
+  "metrics": {
+    "accuracy": 0.7916666666666666,
+    "matrix": {
+      "stringing": {
+        "stringing": 11,
+        "clean": 0,
+        "other_defect": 3
+      },
+      "clean": {
+        "stringing": 1,
+        "clean": 2,
+        "other_defect": 0
+      },
+      "other_defect": {
+        "stringing": 0,
+        "clean": 1,
+        "other_defect": 6
+      }
+    },
+    "perClass": {
+      "stringing": {
+        "tp": 11,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.9166666666666666,
+        "recall": 0.7857142857142857,
+        "f1": 0.8461538461538461
+      },
+      "clean": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1": 0.6666666666666666
+      },
+      "other_defect": {
+        "tp": 6,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.6666666666666666,
+        "recall": 0.8571428571428571,
+        "f1": 0.75
+      }
+    },
+    "total": 24,
+    "correct": 19
+  },
+  "results": [
+    {
+      "path": "/workspace/dataset/clean/Clean_butterfly.jpeg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.96,
+      "reasoning": "The multi-color butterfly print exhibits crisp layer transitions, intact tree supports, and no visible stringing or surface defects."
+    },
+    {
+      "path": "/workspace/dataset/clean/clean_traffic_cone.jpg",
+      "expected": "clean",
+      "predicted": "clean",
+      "severity": 0,
+      "confidence": 0.95,
+      "reasoning": "The printed orange cones exhibit smooth, uniform outer perimeters with no visible stringing or surface defects across the array."
+    },
+    {
+      "path": "/workspace/dataset/clean/Clean_zoro.webp",
+      "expected": "clean",
+      "predicted": "stringing",
+      "severity": 0.15,
+      "confidence": 0.88,
+      "reasoning": "Fine wisps and strands of filament are visible projecting from the sword handles and the tips of the hair."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/bad_wall_quality_inside_bike.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.5,
+      "confidence": 0.85,
+      "reasoning": "The interior features and overhang cutouts exhibit significant sagging, rough perimeters, and poor bridging quality."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect001.jpeg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.45,
+      "confidence": 0.92,
+      "reasoning": "Pronounced horizontal layer banding and extrusion inconsistency lines are visible across the column of the white print."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect002.jpeg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.78,
+      "confidence": 0.96,
+      "reasoning": "Severe under-extrusion, layer separation gaps, and rough exterior overhang surface artifacts are visible on the hull."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect003.webp",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.65,
+      "confidence": 0.95,
+      "reasoning": "The printed cylinder displays pronounced rippling and surface roughness along the vertical seam zone rather than stringing."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/other_defect004.jpeg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.35,
+      "confidence": 0.92,
+      "reasoning": "The top surface of the rectangular part exhibits visible surface blemishes, tiny blobs, and scarring."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/poor_adhesion.jpg",
+      "expected": "other_defect",
+      "predicted": "clean",
+      "severity": 0.05,
+      "confidence": 0.95,
+      "reasoning": "The part exhibits smooth, consistent layer lines, crisp bridging across cutouts, and no visible stringing or defects."
+    },
+    {
+      "path": "/workspace/dataset/other_defect/terrible_corners.jpg",
+      "expected": "other_defect",
+      "predicted": "other_defect",
+      "severity": 0.4,
+      "confidence": 0.95,
+      "reasoning": "The part exhibits uneven, rough, and deformed edges along the base perimeter likely caused by warping or poor bed adhesion, but no stringing."
+    },
+    {
+      "path": "/workspace/dataset/stringing/Always_first_strand.webp",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 1,
+      "confidence": 0.99,
+      "reasoning": "The part exhibits catastrophic deformation, severe blobbing, and melting artifacts resulting in a completely failed print."
+    },
+    {
+      "path": "/workspace/dataset/stringing/little_moss_stringing.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.75,
+      "confidence": 0.95,
+      "reasoning": "Dense whiskery strands and fibrous hairs protrude heavily along the upper and vertical edges of the print."
+    },
+    {
+      "path": "/workspace/dataset/stringing/real_stringing.jpg",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.75,
+      "confidence": 0.95,
+      "reasoning": "Severe under-extrusion and inconsistent layer lines are visible across the entire exterior surface of the print."
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing001.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.7,
+      "confidence": 0.99,
+      "reasoning": "Dense cobweb-like filament strands and fine wisps stretch continuously across the towers.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing002.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.5,
+      "confidence": 0.95,
+      "reasoning": "Fine filament wisps and hairy cobwebs are visible clinging along the printed edges and bridging between the segments.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing003.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.85,
+      "confidence": 0.99,
+      "reasoning": "Dense webs of fine filament strands heavily bridge the gaps between the printed vertical structures.",
+      "humanSeverity": 2,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing004.png",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.8,
+      "confidence": 0.99,
+      "reasoning": "Dense, fine horizontal strands of filament bridge continuously across the gap between the two vertical pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing005.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.85,
+      "confidence": 0.99,
+      "reasoning": "Dense, fine strands of filament span horizontally across the entire gap between the two pillars.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing006.webp",
+      "expected": "stringing",
+      "predicted": "other_defect",
+      "severity": 0.75,
+      "confidence": 0.95,
+      "reasoning": "Severe drooping loops and sagging overhang failures are visible along the roof edges, chimney, and hull perimeters.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing007.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.75,
+      "confidence": 0.96,
+      "reasoning": "Numerous thick and fine filament strings span across the rectangular cutouts and circular holes throughout the temperature tower.",
+      "humanSeverity": 3,
+      "context": "handheld"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing008.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.6,
+      "confidence": 0.98,
+      "reasoning": "Distinct strands of filament and wisps bridge across the open gap between the two printed candle towers.",
+      "humanSeverity": 3,
+      "context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing009.jpg",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.65,
+      "confidence": 0.95,
+      "reasoning": "Noticeable branching strings and fine filament hairs protrude along the side of the vertical column with wisps trailing across the bed.",
+      "humanSeverity": 3,
+context": "printbed"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing010.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.45,
+      "confidence": 0.95,
+      "reasoning": "Fine wispy filament strands bridge the interior cabin opening, along with visible layer inconsistency on the hull.",
+      "humanSeverity": 3,
+      "context": "close-up"
+    },
+    {
+      "path": "/workspace/dataset/stringing/stringing011.webp",
+      "expected": "stringing",
+      "predicted": "stringing",
+      "severity": 0.4,
+      "confidence": 0.95,
+      "reasoning": "Fine spiderweb-like filament strands and wisps are clearly visible across the overhangs and flat surfaces of the black print.",
+      "humanSeverity": 1,
+      "context": "close-up"
+    }
+  ]
+}
